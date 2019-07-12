@@ -26,43 +26,14 @@ namespace Util
         
 
         protected override void OnStop()
-        {            
-            new RabbitmqUtil(true).SendSerialized(new ClientRepository().dto);
-            
-
-            //try
-            //{
-
-            //    List<string> list = new ClientDAL().InstalledsPrograms();
-            //    foreach (var item in list)
-            //    {
-            //        Console.WriteLine(item);
-            //    }
-
-            //    Console.ReadKey();
-            //}
-            //catch (Exception ex)
-            //{
-            //    throw ex;
-            //}
-
-
-
-
-
-            StreamWriter vWriter = new StreamWriter(@"c:\testeServico.txt", true);
-
-            vWriter.WriteLine("Servico Parado: " + DateTime.Now.ToString());
-            vWriter.Flush();
-            vWriter.Close();
+        {
+           
+             
         }
 
         private void timer1_Tick(object sender)
         {
-            StreamWriter vWriter = new StreamWriter(@"c:\testeServico.txt", true);
-            vWriter.WriteLine("Servico Rodando: " + DateTime.Now.ToString());
-            vWriter.Flush();
-            vWriter.Close();
+            new RabbitmqUtil(true).SendSerialized(new ClientRepository().dto);
         }
 
 
