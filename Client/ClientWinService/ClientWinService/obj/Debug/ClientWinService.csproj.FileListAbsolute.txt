@@ -10,3 +10,5 @@ D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\ClientW
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\ClientWinService.csproj.CopyComplete
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\ClientWinService.exe
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\ClientWinService.pdb
+D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\Util.dll
+D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\Util.pdb

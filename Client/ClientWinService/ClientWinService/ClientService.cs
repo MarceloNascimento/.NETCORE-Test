@@ -26,8 +26,7 @@ namespace ClientWinService
         protected override void OnStop()
         {
 
-
-
+         
             //try
             //{
 
