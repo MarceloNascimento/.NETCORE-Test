@@ -6,4 +6,3 @@ D:\Workspace\Singular\API\Processer\obj\Debug\netstandard2.0\Processer.AssemblyI
 D:\Workspace\Singular\API\Processer\obj\Debug\netstandard2.0\Processer.AssemblyInfo.cs
 D:\Workspace\Singular\API\Processer\obj\Debug\netstandard2.0\Processer.dll
 D:\Workspace\Singular\API\Processer\obj\Debug\netstandard2.0\Processer.pdb
-D:\Workspace\Singular\API\Processer\obj\Debug\netstandard2.0\Processer.csprojAssemblyReference.cache

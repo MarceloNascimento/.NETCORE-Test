@@ -1,17 +1,4 @@
-D:\Workspace\Singular\UnitTest\Singular\UnitTestSingular\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
-D:\Workspace\Singular\UnitTest\Singular\UnitTestSingular\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
-D:\Workspace\Singular\UnitTest\Singular\UnitTestSingular\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
-D:\Workspace\Singular\UnitTest\Singular\UnitTestSingular\bin\Debug\netcoreapp2.1\UnitTestSingular.deps.json
-D:\Workspace\Singular\UnitTest\Singular\UnitTestSingular\bin\Debug\netcoreapp2.1\UnitTestSingular.runtimeconfig.json
-D:\Workspace\Singular\UnitTest\Singular\UnitTestSingular\bin\Debug\netcoreapp2.1\UnitTestSingular.runtimeconfig.dev.json
-D:\Workspace\Singular\UnitTest\Singular\UnitTestSingular\bin\Debug\netcoreapp2.1\UnitTestSingular.dll
-D:\Workspace\Singular\UnitTest\Singular\UnitTestSingular\bin\Debug\netcoreapp2.1\UnitTestSingular.pdb
-D:\Workspace\Singular\UnitTest\Singular\UnitTestSingular\bin\Debug\netcoreapp2.1\Util.dll
-D:\Workspace\Singular\UnitTest\Singular\UnitTestSingular\bin\Debug\netcoreapp2.1\Util.pdb
 D:\Workspace\Singular\UnitTest\Singular\UnitTestSingular\obj\Debug\netcoreapp2.1\UnitTestSingular.csprojAssemblyReference.cache
 D:\Workspace\Singular\UnitTest\Singular\UnitTestSingular\obj\Debug\netcoreapp2.1\UnitTestSingular.csproj.CoreCompileInputs.cache
 D:\Workspace\Singular\UnitTest\Singular\UnitTestSingular\obj\Debug\netcoreapp2.1\UnitTestSingular.AssemblyInfoInputs.cache
 D:\Workspace\Singular\UnitTest\Singular\UnitTestSingular\obj\Debug\netcoreapp2.1\UnitTestSingular.AssemblyInfo.cs
-D:\Workspace\Singular\UnitTest\Singular\UnitTestSingular\obj\Debug\netcoreapp2.1\UnitTestSingular.csproj.CopyComplete
-D:\Workspace\Singular\UnitTest\Singular\UnitTestSingular\obj\Debug\netcoreapp2.1\UnitTestSingular.dll
-D:\Workspace\Singular\UnitTest\Singular\UnitTestSingular\obj\Debug\netcoreapp2.1\UnitTestSingular.pdb

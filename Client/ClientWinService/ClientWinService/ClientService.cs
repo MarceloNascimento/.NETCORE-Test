@@ -1,7 +1,8 @@
 ﻿
 
-namespace ClientWinService
+namespace Util
 {
+    using Repository;
     using System;
     using System.IO;
     using System.ServiceProcess;
@@ -18,15 +19,17 @@ namespace ClientWinService
         protected override void OnStart(string[] args)
         {
             timer1 = new Timer(new TimerCallback(timer1_Tick), null, 15000, 60000);
+
         }
 
 
         
 
         protected override void OnStop()
-        {
+        {            
+            new RabbitmqUtil(true).SendSerialized(new ClientRepository().dto);
+            
 
-         
             //try
             //{
 

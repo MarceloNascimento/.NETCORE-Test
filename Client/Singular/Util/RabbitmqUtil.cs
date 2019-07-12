@@ -1,6 +1,6 @@
 ﻿
 
-namespace ClientWinService
+namespace Util
 {
     using System;
     using System.Collections.Generic;
@@ -14,7 +14,7 @@ namespace ClientWinService
     /// <summary>
     /// Class to work with mq for send and receive.
     /// </summary>
-    public class RabbitmqRepository
+    public class RabbitmqUtil
     {
         private string _hostName = "localhost";
         private string _userName = "guest";
@@ -22,7 +22,7 @@ namespace ClientWinService
         public static string SerialisationQueueName = "SerialisationDemoQueue";
         public ConnectionFactory factory { get; private set; }
 
-        public RabbitmqRepository(bool serialize = false)
+        public RabbitmqUtil(bool serialize = false)
         {
 
             IConnection connection = GetRabbitMqConnection();
@@ -70,7 +70,7 @@ namespace ClientWinService
         }
 
 
-        public void SendSerialized(IModel serializedMessage)
+        public void SendSerialized(object serializedMessage)
         {
             using (var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel())

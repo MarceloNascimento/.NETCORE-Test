@@ -1,4 +1,4 @@
-﻿namespace ClientWinService
+﻿namespace Util
 {
     partial class ClientService
     {
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            this.ServiceName = "Service1";
+            this.ServiceName = "ClientService";
         }
 
         #endregion

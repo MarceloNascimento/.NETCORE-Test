@@ -25,6 +25,15 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "RabbitMQ.Client/6.0.0-pre3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {}
+        }
       }
     }
   },
@@ -171,11 +180,29 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "RabbitMQ.Client/6.0.0-pre3": {
+      "sha512": "8OPb5MlMsTVfa7aLS95+DmLjxsK3PeUPmp1gUQCmy+t6eC5e5dpdb8V+thEQkQIPQ7IwkT44dOMh6NTe8NRq5Q==",
+      "type": "package",
+      "path": "rabbitmq.client/6.0.0-pre3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/RabbitMQ.Client.dll",
+        "lib/net451/RabbitMQ.Client.xml",
+        "lib/netstandard1.5/RabbitMQ.Client.dll",
+        "lib/netstandard1.5/RabbitMQ.Client.xml",
+        "lib/netstandard2.0/RabbitMQ.Client.dll",
+        "lib/netstandard2.0/RabbitMQ.Client.xml",
+        "rabbitmq.client.6.0.0-pre3.nupkg.sha512",
+        "rabbitmq.client.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.3",
+      "RabbitMQ.Client >= 6.0.0-pre3"
     ]
   },
   "packageFolders": {
@@ -225,6 +252,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "RabbitMQ.Client": {
+            "target": "Package",
+            "version": "[6.0.0-pre3, )"
           }
         },
         "imports": [

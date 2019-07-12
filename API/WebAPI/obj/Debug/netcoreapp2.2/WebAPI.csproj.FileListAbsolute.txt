@@ -3,7 +3,6 @@ D:\Workspace\Singular\API\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.runtimeconfig.js
 D:\Workspace\Singular\API\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.runtimeconfig.dev.json
 D:\Workspace\Singular\API\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.dll
 D:\Workspace\Singular\API\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.pdb
-D:\Workspace\Singular\API\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.csprojAssemblyReference.cache
 D:\Workspace\Singular\API\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.csproj.CoreCompileInputs.cache
 D:\Workspace\Singular\API\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.RazorAssemblyInfo.cache
 D:\Workspace\Singular\API\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.RazorAssemblyInfo.cs

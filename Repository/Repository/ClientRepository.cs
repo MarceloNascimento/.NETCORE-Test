@@ -16,6 +16,7 @@ namespace Repository
 
         public ClientRepository()
         {
+            this.dto = new ClientDTO();
             InstalledsPrograms();
             MachineName();
             TimerInformations();
@@ -30,7 +31,7 @@ namespace Repository
         {
             List<string> list = new List<string>();
             string registry_key = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall";
-            using (Microsoft.Win32.RegistryKey key = Registry.LocalMachine.OpenSubKey(registry_key))
+            using (RegistryKey key = Registry.LocalMachine.OpenSubKey(registry_key))
             {
                 foreach (string subkey_name in key.GetSubKeyNames())
                 {
@@ -61,7 +62,6 @@ namespace Repository
         /// </summary>
         public void TimerInformations()
         {
-
             this.dto.DateHours = DateTime.UtcNow;
         }
 

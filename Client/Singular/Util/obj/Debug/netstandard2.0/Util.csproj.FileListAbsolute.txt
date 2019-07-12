@@ -1,9 +1,12 @@
 D:\Workspace\Singular\Client\Singular\Util\bin\Debug\netstandard2.0\Util.deps.json
 D:\Workspace\Singular\Client\Singular\Util\bin\Debug\netstandard2.0\Util.dll
+D:\Workspace\Singular\Client\Singular\Util\bin\Debug\netstandard2.0\Util.pdb
+D:\Workspace\Singular\Client\Singular\Util\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
+D:\Workspace\Singular\Client\Singular\Util\bin\Debug\netstandard2.0\Newtonsoft.Json.xml
 D:\Workspace\Singular\Client\Singular\Util\obj\Debug\netstandard2.0\Util.csprojAssemblyReference.cache
 D:\Workspace\Singular\Client\Singular\Util\obj\Debug\netstandard2.0\Util.csproj.CoreCompileInputs.cache
 D:\Workspace\Singular\Client\Singular\Util\obj\Debug\netstandard2.0\Util.AssemblyInfoInputs.cache
 D:\Workspace\Singular\Client\Singular\Util\obj\Debug\netstandard2.0\Util.AssemblyInfo.cs
-D:\Workspace\Singular\Client\Singular\Util\bin\Debug\netstandard2.0\Util.pdb
+D:\Workspace\Singular\Client\Singular\Util\obj\Debug\netstandard2.0\Util.csproj.CopyComplete
 D:\Workspace\Singular\Client\Singular\Util\obj\Debug\netstandard2.0\Util.dll
 D:\Workspace\Singular\Client\Singular\Util\obj\Debug\netstandard2.0\Util.pdb

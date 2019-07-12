@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="RabbitMQ.Client, Version=6.0.0.0, Culture=neutral, PublicKeyToken=89e7d7c5feba84ce, processorArchitecture=MSIL">
+      <HintPath>..\..\Singular\packages\RabbitMQ.Client.6.0.0-pre3\lib\net451\RabbitMQ.Client.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
@@ -46,7 +49,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClientRepository.cs" />
     <Compile Include="ProjectInstaller.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -64,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ProjectInstaller.resx">
@@ -72,8 +75,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\DTO\DTO\DTO.csproj">
-      <Project>{BF6EEBB1-D5A6-478A-B931-F520DCBFB7B2}</Project>
+      <Project>{bf6eebb1-d5a6-478a-b931-f520dcbfb7b2}</Project>
       <Name>DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Repository\Repository\Repository.csproj">
+      <Project>{8a0d3c98-fbcf-438a-9ce2-5e95b91da99f}</Project>
+      <Name>Repository</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Singular\Util\Util.csproj">
       <Project>{bb63f7d4-97b8-425b-8d1b-ab03b202bd5d}</Project>

@@ -1,4 +1,4 @@
-﻿namespace ClientWinService
+﻿namespace Util
 {
     partial class ProjectInstaller
     {

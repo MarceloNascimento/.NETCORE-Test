@@ -2,7 +2,15 @@ D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\ClientW
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\ClientWinService.exe
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\ClientWinService.pdb
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\DTO.dll
+D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\RabbitMQ.Client.dll
+D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\Repository.dll
+D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\Util.dll
+D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\Newtonsoft.Json.dll
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\DTO.pdb
+D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\Repository.pdb
+D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\Util.pdb
+D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\RabbitMQ.Client.xml
+D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\Newtonsoft.Json.xml
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\ClientWinService.csprojAssemblyReference.cache
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\ClientWinService.ProjectInstaller.resources
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\ClientWinService.csproj.GenerateResource.cache
@@ -10,5 +18,3 @@ D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\ClientW
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\ClientWinService.csproj.CopyComplete
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\ClientWinService.exe
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\ClientWinService.pdb
-D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\Util.dll
-D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\Util.pdb
