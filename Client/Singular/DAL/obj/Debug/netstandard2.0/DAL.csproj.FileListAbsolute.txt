@@ -1,0 +1,12 @@
+D:\Workspace\Singular\Client\Singular\DAL\bin\Debug\netstandard2.0\DAL.deps.json
+D:\Workspace\Singular\Client\Singular\DAL\bin\Debug\netstandard2.0\DAL.dll
+D:\Workspace\Singular\Client\Singular\DAL\bin\Debug\netstandard2.0\DAL.pdb
+D:\Workspace\Singular\Client\Singular\DAL\bin\Debug\netstandard2.0\Microsoft.Win32.Registry.dll
+D:\Workspace\Singular\Client\Singular\DAL\bin\Debug\netstandard2.0\Microsoft.Win32.Registry.xml
+D:\Workspace\Singular\Client\Singular\DAL\obj\Debug\netstandard2.0\DAL.csproj.CoreCompileInputs.cache
+D:\Workspace\Singular\Client\Singular\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfoInputs.cache
+D:\Workspace\Singular\Client\Singular\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfo.cs
+D:\Workspace\Singular\Client\Singular\DAL\obj\Debug\netstandard2.0\DAL.csproj.CopyComplete
+D:\Workspace\Singular\Client\Singular\DAL\obj\Debug\netstandard2.0\DAL.dll
+D:\Workspace\Singular\Client\Singular\DAL\obj\Debug\netstandard2.0\DAL.pdb
+D:\Workspace\Singular\Client\Singular\DAL\obj\Debug\netstandard2.0\DAL.csprojAssemblyReference.cache

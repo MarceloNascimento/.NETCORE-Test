@@ -1,0 +1,9 @@
+D:\Workspace\Singular\API\Processer\bin\Debug\netstandard2.0\Processer.deps.json
+D:\Workspace\Singular\API\Processer\bin\Debug\netstandard2.0\Processer.dll
+D:\Workspace\Singular\API\Processer\bin\Debug\netstandard2.0\Processer.pdb
+D:\Workspace\Singular\API\Processer\obj\Debug\netstandard2.0\Processer.csproj.CoreCompileInputs.cache
+D:\Workspace\Singular\API\Processer\obj\Debug\netstandard2.0\Processer.AssemblyInfoInputs.cache
+D:\Workspace\Singular\API\Processer\obj\Debug\netstandard2.0\Processer.AssemblyInfo.cs
+D:\Workspace\Singular\API\Processer\obj\Debug\netstandard2.0\Processer.dll
+D:\Workspace\Singular\API\Processer\obj\Debug\netstandard2.0\Processer.pdb
+D:\Workspace\Singular\API\Processer\obj\Debug\netstandard2.0\Processer.csprojAssemblyReference.cache

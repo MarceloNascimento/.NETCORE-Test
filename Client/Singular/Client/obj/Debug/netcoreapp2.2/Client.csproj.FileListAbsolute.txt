@@ -1,0 +1,14 @@
+D:\Workspace\Singular\Client\Singular\Client\bin\Debug\netcoreapp2.2\Client.deps.json
+D:\Workspace\Singular\Client\Singular\Client\bin\Debug\netcoreapp2.2\Client.runtimeconfig.json
+D:\Workspace\Singular\Client\Singular\Client\bin\Debug\netcoreapp2.2\Client.runtimeconfig.dev.json
+D:\Workspace\Singular\Client\Singular\Client\bin\Debug\netcoreapp2.2\Client.dll
+D:\Workspace\Singular\Client\Singular\Client\bin\Debug\netcoreapp2.2\Client.pdb
+D:\Workspace\Singular\Client\Singular\Client\obj\Debug\netcoreapp2.2\Client.csprojAssemblyReference.cache
+D:\Workspace\Singular\Client\Singular\Client\obj\Debug\netcoreapp2.2\Client.csproj.CoreCompileInputs.cache
+D:\Workspace\Singular\Client\Singular\Client\obj\Debug\netcoreapp2.2\Client.AssemblyInfoInputs.cache
+D:\Workspace\Singular\Client\Singular\Client\obj\Debug\netcoreapp2.2\Client.AssemblyInfo.cs
+D:\Workspace\Singular\Client\Singular\Client\obj\Debug\netcoreapp2.2\Client.dll
+D:\Workspace\Singular\Client\Singular\Client\obj\Debug\netcoreapp2.2\Client.pdb
+D:\Workspace\Singular\Client\Singular\Client\bin\Debug\netcoreapp2.2\DAL.dll
+D:\Workspace\Singular\Client\Singular\Client\bin\Debug\netcoreapp2.2\DAL.pdb
+D:\Workspace\Singular\Client\Singular\Client\obj\Debug\netcoreapp2.2\Client.csproj.CopyComplete
