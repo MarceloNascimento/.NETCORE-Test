@@ -1,26 +1,33 @@
 ﻿
 
-namespace DAL
+namespace Repository
 {
+    using DTO;
     using Microsoft.Win32;
     using System;
     using System.Collections.Generic;
+
     /// <summary>
     /// Class to access Me
     /// </summary>
-    public class ClientDAL
+    public class ClientRepository
     {
+        public ClientDTO dto { get; set; }
 
-
-        public ClientDAL()
+        public ClientRepository()
         {
+            InstalledsPrograms();
+            MachineName();
+            TimerInformations();
 
         }
 
-        public List<string> InstalledsPrograms()
+
+        /// <summary>
+        /// Get list of installed programs in machine
+        /// </summary>
+        public void InstalledsPrograms()
         {
-
-
             List<string> list = new List<string>();
             string registry_key = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall";
             using (Microsoft.Win32.RegistryKey key = Registry.LocalMachine.OpenSubKey(registry_key))
@@ -35,8 +42,27 @@ namespace DAL
                     }
                 }
 
-                return list;
+                this.dto.ProgramsList = list;
             }
+        }
+
+
+        /// <summary>
+        /// Get machine Name
+        /// </summary>
+        public void MachineName()
+        {
+
+            this.dto.MachineName = Environment.MachineName;
+        }
+
+        /// <summary>
+        /// Get machine Name
+        /// </summary>
+        public void TimerInformations()
+        {
+
+            this.dto.DateHours = DateTime.UtcNow;
         }
 
     }
