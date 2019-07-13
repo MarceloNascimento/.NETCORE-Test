@@ -34,6 +34,19 @@
         "runtime": {
           "lib/netstandard2.0/RabbitMQ.Client.dll": {}
         }
+      },
+      "DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "RabbitMQ.Client": "6.0.0-pre3"
+        },
+        "compile": {
+          "bin/placeholder/DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DTO.dll": {}
+        }
       }
     }
   },
@@ -197,10 +210,16 @@
         "rabbitmq.client.6.0.0-pre3.nupkg.sha512",
         "rabbitmq.client.nuspec"
       ]
+    },
+    "DTO/1.0.0": {
+      "type": "project",
+      "path": "../../../DTO/DTO/DTO.csproj",
+      "msbuildProject": "../../../DTO/DTO/DTO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "DTO >= 1.0.0",
       "NETStandard.Library >= 2.0.3",
       "RabbitMQ.Client >= 6.0.0-pre3"
     ]
@@ -235,7 +254,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Workspace\\Singular\\DTO\\DTO\\DTO.csproj": {
+              "projectPath": "D:\\Workspace\\Singular\\DTO\\DTO\\DTO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

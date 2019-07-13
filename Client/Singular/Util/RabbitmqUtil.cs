@@ -7,6 +7,7 @@ namespace Util
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using DTO;
     using Newtonsoft.Json;
     using RabbitMQ.Client;
     using RabbitMQ.Client.Events;
@@ -46,7 +47,7 @@ namespace Util
             return this.factory.CreateConnection();
         }
 
-    
+
 
         public void Send(string message = "")
         {
@@ -58,7 +59,7 @@ namespace Util
                                      exclusive: false,
                                      autoDelete: false,
                                      arguments: null);
-                                
+
                 var body = Encoding.UTF8.GetBytes(message);
 
                 channel.BasicPublish(exchange: "",
@@ -80,7 +81,7 @@ namespace Util
                                      exclusive: false,
                                      autoDelete: false,
                                      arguments: null);
-                                 
+
                 var body = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(serializedMessage));
 
                 channel.BasicPublish(exchange: "",
@@ -96,7 +97,7 @@ namespace Util
 
         public void Receive()
         {
-           
+
             using (var connection = factory.CreateConnection())
             {
                 using (var channel = connection.CreateModel())
@@ -129,32 +130,37 @@ namespace Util
 
 
 
-        public object ReceiveSerialized()
+        public List<ClientDTO> ReceiveSerialized(string pQueue = "")
         {
-            Object message = new Object();
+
+
+            string message = string.Empty;
+            List<ClientDTO> result = new List<ClientDTO>();
             using (var connection = factory.CreateConnection())
             {
                 using (var channel = connection.CreateModel())
                 {
-                    channel.QueueDeclare(queue: "MACHINES-MONITOR",
+                    channel.QueueDeclare(queue: pQueue,
                                          durable: false,
                                          exclusive: false,
                                          autoDelete: false,
                                          arguments: null);
-                    
+
                     var consumer = new EventingBasicConsumer(channel);
                     consumer.Received += (model, ea) =>
                     {
                         var body = ea.Body;
-                        message = JsonConvert.DeserializeObject(Encoding.UTF8.GetString(body));                       
-                        
+                        message = Encoding.UTF8.GetString(body);
+                        var deserialized = JsonConvert.DeserializeObject<ClientDTO>(message);
+                        if (!string.IsNullOrEmpty(message) && !string.IsNullOrWhiteSpace(message))
+                            result.Add(deserialized);
                     };
-
-                    channel.BasicConsume(queue: "MACHINES-MONITOR",
+                    
+                    channel.BasicConsume(queue: pQueue,
                                          autoAck: true,
                                          consumer: consumer);
 
-                    return message;
+                    return result;
                 }
             }
 
