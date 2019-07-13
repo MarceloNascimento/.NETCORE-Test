@@ -2,26 +2,26 @@
 
 namespace Util
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
     using DTO;
     using Newtonsoft.Json;
     using RabbitMQ.Client;
     using RabbitMQ.Client.Events;
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
 
     /// <summary>
     /// Class to work with mq for send and receive.
     /// </summary>
     public class RabbitmqUtil
     {
+
         private string _hostName = "localhost";
         private string _userName = "guest";
         private string _password = "guest";
-        public static string SerialisationQueueName = "SerialisationDemoQueue";
+        
         public ConnectionFactory factory { get; private set; }
+
 
         /// <summary>
         /// Class send or receive rabbitmq messages
@@ -35,13 +35,13 @@ namespace Util
             if (serialize)
             {
                 IModel model = connection.CreateModel();
-                //SetupSerialisationMessageQueue(model);
+                
             }
         }
 
 
 
-        public IConnection GetRabbitMqConnection()
+        private IConnection GetRabbitMqConnection()
         {
             this.factory = new ConnectionFactory();
             this.factory.HostName = _hostName;

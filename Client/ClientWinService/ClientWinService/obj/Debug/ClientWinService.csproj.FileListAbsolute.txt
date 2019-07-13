@@ -12,9 +12,9 @@ D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\Util.pd
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\RabbitMQ.Client.xml
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\Newtonsoft.Json.xml
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\ClientWinService.csprojAssemblyReference.cache
-D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\ClientWinService.ProjectInstaller.resources
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\ClientWinService.csproj.GenerateResource.cache
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\ClientWinService.csproj.CoreCompileInputs.cache
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\ClientWinService.csproj.CopyComplete
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\ClientWinService.exe
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\ClientWinService.pdb
+D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\Util.ProjectInstaller.resources

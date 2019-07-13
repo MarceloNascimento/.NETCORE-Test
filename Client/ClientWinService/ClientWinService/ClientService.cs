@@ -18,7 +18,7 @@ namespace Util
 
         protected override void OnStart(string[] args)
         {
-            timer1 = new Timer(new TimerCallback(timer1_Tick), null, 15000, 60000);
+            timer1 = new Timer(new TimerCallback(SendMessageQueues), null, 15000, 60000);
 
         }
 
@@ -31,7 +31,7 @@ namespace Util
              
         }
 
-        private void timer1_Tick(object sender)
+        private void SendMessageQueues(object sender)
         {
             new RabbitmqUtil(true).SendSerialized(new ClientRepository().dto);
         }

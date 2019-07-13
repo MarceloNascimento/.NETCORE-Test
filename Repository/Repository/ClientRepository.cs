@@ -8,9 +8,9 @@ namespace Repository
     using System.Collections.Generic;
 
     /// <summary>
-    /// Class to access Me
+    /// Class to access Client information for bussiness
     /// </summary>
-    public class ClientRepository
+    public class ClientRepository : IClientRepository
     {
         public ClientDTO dto { get; set; }
 
@@ -26,6 +26,7 @@ namespace Repository
 
         /// <summary>
         /// Get list of installed programs in machine
+        /// Method for you running in windows Service
         /// </summary>
         public void InstalledsPrograms()
         {
@@ -49,16 +50,17 @@ namespace Repository
 
 
         /// <summary>
-        /// Get machine Name
+        /// Get machine Name 
+        /// Method for you running in windows service
         /// </summary>
         public void MachineName()
         {
-
             this.dto.MachineName = Environment.MachineName;
         }
 
         /// <summary>
-        /// Get machine Name
+        /// Get Date Time Currently
+        /// Method for you running in windows Service
         /// </summary>
         public void TimerInformations()
         {
