@@ -23,6 +23,10 @@ namespace Util
         public static string SerialisationQueueName = "SerialisationDemoQueue";
         public ConnectionFactory factory { get; private set; }
 
+        /// <summary>
+        /// Class send or receive rabbitmq messages
+        /// </summary>
+        /// <param name="serialize">Desire serialize object</param>
         public RabbitmqUtil(bool serialize = false)
         {
 
