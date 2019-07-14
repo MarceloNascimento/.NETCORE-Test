@@ -14,22 +14,7 @@ namespace Repository
     {
         public string connectionString = "Server=localhost,1401;Database=DBMONITORS;User Id=monitor;Password=Q!W@e3r4;";
 
-        public IList<Machine> Select()
-        {
-
-            IList<Machine> machines = new List<Machine>();
-
-            using (var connection = new SqlConnection(connectionString))
-            {
-                machines = connection.Query<Machine>(@"SELECT m.*,p.ds_name programs FROM Machines m
-                    LEFT JOIN Programs p ON p.machine_id = m.id_machine
-                    ORDER BY m.ds_name;").ToList();
-
-            }
-
-            return machines;
-        }
-
+     
 
 
         public int Update(ClientDTO client)
@@ -78,6 +63,74 @@ namespace Repository
             }
 
         }
+
+
+
+        public IList<Machine> SelectTop10Machines()
+        {
+
+            IList<Machine> machines = new List<Machine>();
+
+            using (var connection = new SqlConnection(connectionString))
+            {
+                machines = connection.Query<Machine>(@"SELECT  TOP 10
+                 (CASE WHEN (CAST(DATEDIFF(MINUTE,m.dt_datehours,ms.dt_datehours) AS DECIMAL(6, 1)) > 0 )
+                  THEN (CAST(DATEDIFF(MINUTE,m.dt_datehours,ms.dt_datehours) AS DECIMAL(6, 1))) ELSE 0 END) AS TMP,
+                   ms.ds_name
+                    FROM Machines  ms, Machines m 
+                WHERE ms.ds_name = m.ds_name 
+                ORDER BY TMP DESC ) MA").ToList();
+
+            }
+
+            return machines;
+        }
+
+        public IList<Machine> SelectTop10Programs()
+        {
+
+            IList<Machine> machines = new List<Machine>();
+
+            using (var connection = new SqlConnection(connectionString))
+            {
+                machines = connection.Query<Machine>(@"SELECT TOP 10 (p.ds_name) program_name,
+                 SUM(CASE WHEN (pr.ds_name = p.ds_name) THEN 1 ELSE 0 END) program_counter 
+                WHERE pr.ds_name = p.ds_name
+                 GROUP BY p.ds_name
+                ORDER BY program_counter DESC").ToList();
+
+            }
+
+            return machines;
+        }
+
+
+        public IList<Machine> SelectKPIs()
+        {
+
+            IList<Machine> machines = new List<Machine>();
+
+            using (var connection = new SqlConnection(connectionString))
+            {
+                machines = connection.Query<Machine>(@" SELECT *   
+                FROM 
+               (SELECT (m.ds_name) machine_name,    
+                    SUM(CASE WHEN ( (DATEDIFF(MINUTE,m.dt_datehours,ms.dt_datehours) > 0) AND (DATEDIFF(MINUTE,m.dt_datehours,ms.dt_datehours) = 1 )) THEN 1 ELSE 0 END) machines_ok, -- Time limit
+                    SUM(CASE WHEN ( (DATEDIFF(MINUTE,m.dt_datehours,ms.dt_datehours) > 1) AND CAST((DATEDIFF(SECOND,m.dt_datehours,ms.dt_datehours))/60  AS DECIMAL(6, 1)) < 1.5)  THEN 1 ELSE 0 END) machines_alert, -- Time limit
+                    SUM(CASE WHEN ( CAST((DATEDIFF(MINUTE,m.dt_datehours,ms.dt_datehours))/60  AS DECIMAL(6, 1)) > 1.5)  THEN 1 ELSE 0 END) machines_offline -- Time limit
+       
+                FROM Machines m,Machines ms
+                 WHERE ms.ds_name = m.ds_name
+               GROUP BY m.ds_name) AS Machines").ToList();
+
+            }
+
+            return machines;
+        }
+
+
+
+
     }
 
 }
