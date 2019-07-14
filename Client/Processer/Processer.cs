@@ -4,16 +4,9 @@ namespace Processer
 {
     using DTO;
     using Repository;
-    using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
-    using System.Data;
-    using System.Diagnostics;
-    using System.Linq;
     using System.ServiceProcess;
-    using System.Text;
     using System.Threading;
-    using System.Threading.Tasks;
     using Util;
 
     public partial class Processer : ServiceBase
@@ -39,6 +32,14 @@ namespace Processer
 
         protected override void OnStop()
         {
+            if (this.MessagesList.Count > 0)
+            {
+                var rep = new MachineRepository();
+                foreach (var client in this.MessagesList)
+                {
+                    rep.Insert(client);
+                }
+            }
 
         }
     }
