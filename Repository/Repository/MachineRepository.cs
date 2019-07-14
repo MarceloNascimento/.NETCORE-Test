@@ -86,14 +86,14 @@ namespace Repository
             return machines;
         }
 
-        public IList<Machine> SelectTop10Programs()
+        public IList<Programs> SelectTop10Programs()
         {
 
-            IList<Machine> machines = new List<Machine>();
+            IList<Programs> machines = new List<Programs>();
 
             using (var connection = new SqlConnection(connectionString))
             {
-                machines = connection.Query<Machine>(@"SELECT TOP 10 (p.ds_name) program_name,
+                machines = connection.Query<Programs>(@"SELECT TOP 10 (p.ds_name) program_name,
                  SUM(CASE WHEN (pr.ds_name = p.ds_name) THEN 1 ELSE 0 END) program_counter 
                 WHERE pr.ds_name = p.ds_name
                  GROUP BY p.ds_name
