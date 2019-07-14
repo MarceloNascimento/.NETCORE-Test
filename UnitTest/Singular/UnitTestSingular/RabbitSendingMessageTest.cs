@@ -34,7 +34,7 @@ namespace UnitTestSingular
         public void RabbitTestReceiveMessage()
         {
             
-            object message = new RabbitmqUtil(true).ReceiveSerialized("MACHINES-MONITOR");
+            object message = new RabbitmqUtil(true).ReceiveClientDTOSerialized("MACHINES-MONITOR");
 
             Assert.IsNotNull(message);
         }

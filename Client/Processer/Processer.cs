@@ -27,7 +27,7 @@ namespace Processer
 
         private void ReceiveMessagesQueues(object state)
         {
-            this.MessagesList = new RabbitmqUtil(true).ReceiveSerialized("MACHINES-MONITOR");
+            this.MessagesList = new RabbitmqUtil(true).ReceiveClientDTOSerialized("MACHINES-MONITOR");
         }
 
         protected override void OnStop()

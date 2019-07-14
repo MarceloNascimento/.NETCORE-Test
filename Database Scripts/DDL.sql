@@ -29,12 +29,24 @@ CREATE TABLE Programs (
     REFERENCES Machines(id_machine)      
 );
 
+
+
 --------------------------- DML basics running system ------------------------
-INSERT Machines (ds_name, dt_datehours)  VALUES ('mac-xpto-172', '2019-07-13 22:09:22.963');
-INSERT Machines (ds_name, dt_datehours)  VALUES ('mac-xpto-173', '2019-07-13 22:09:22.963');
+Delete from Machines;
+Delete from Programs;
+INSERT Machines (ds_name, dt_datehours)  VALUES ('mac-xpto-172',  CONVERT(datetime, '2019-07-13T22:09:38.544', 126));
+INSERT Machines (ds_name, dt_datehours)  VALUES ('mac-xpto-172',  CONVERT(datetime, '2019-07-13T22:08:38.544', 126));
+
+INSERT Machines (ds_name, dt_datehours)  VALUES ('mac-xpto-173',  CONVERT(datetime, '2019-07-13T22:09:38.544', 126));
+INSERT Machines (ds_name, dt_datehours)  VALUES ('mac-xpto-173',  CONVERT(datetime, '2019-07-13T22:08:38.544', 126));
+
+INSERT Machines (ds_name, dt_datehours)  VALUES ('xyz-22-rbt',  CONVERT(datetime, '2019-07-14T13:57:39.953', 126));
 
 INSERT Programs (ds_name, machine_id)  VALUES ('7 zip', 1);
-INSERT Programs (ds_name, machine_id)  VALUES ('oracle', 1);
-INSERT Programs (ds_name, machine_id)  VALUES ('mongodb', 2);
+INSERT Programs (ds_name, machine_id)  VALUES ('7 zip', 2);
+INSERT Programs (ds_name, machine_id)  VALUES ('7 zip', 3);
+INSERT Programs (ds_name, machine_id)  VALUES ('win rar', 4);
+INSERT Programs (ds_name, machine_id)  VALUES ('oracle client', 4);
+
 
 INSERT Users (ds_fullname, ds_login,ds_password)  VALUES ('Sr. Godofredo Vacario', 'Admin', HashBytes('MD5', 'Test'));

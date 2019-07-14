@@ -134,7 +134,7 @@ namespace Util
 
 
 
-        public List<ClientDTO> ReceiveSerialized(string pQueue = "")
+        public List<ClientDTO> ReceiveClientDTOSerialized(string pQueue = "")
         {
 
 
