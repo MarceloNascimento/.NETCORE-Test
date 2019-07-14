@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Client\Singular\Models\Models.csproj" />
     <ProjectReference Include="..\..\..\Client\Singular\Util\Util.csproj" />
     <ProjectReference Include="..\..\..\Repository\Repository\Repository.csproj" />
   </ItemGroup>

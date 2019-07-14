@@ -19,3 +19,5 @@ D:\Workspace\Singular\UnitTest\Singular\UnitTestSingular\bin\Debug\netcoreapp2.2
 D:\Workspace\Singular\UnitTest\Singular\UnitTestSingular\obj\Debug\netcoreapp2.2\UnitTestSingular.csproj.CopyComplete
 D:\Workspace\Singular\UnitTest\Singular\UnitTestSingular\obj\Debug\netcoreapp2.2\UnitTestSingular.dll
 D:\Workspace\Singular\UnitTest\Singular\UnitTestSingular\obj\Debug\netcoreapp2.2\UnitTestSingular.pdb
+D:\Workspace\Singular\UnitTest\Singular\UnitTestSingular\bin\Debug\netcoreapp2.2\Models.dll
+D:\Workspace\Singular\UnitTest\Singular\UnitTestSingular\bin\Debug\netcoreapp2.2\Models.pdb

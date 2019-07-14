@@ -4753,13 +4753,24 @@
           "bin/placeholder/DTO.dll": {}
         }
       },
+      "Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Models.dll": {}
+        }
+      },
       "Repository/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "DTO": "1.0.0",
           "Dapper": "1.60.6",
-          "Microsoft.Win32.Registry": "4.6.0-preview6.19303.8"
+          "Microsoft.Win32.Registry": "4.6.0-preview6.19303.8",
+          "Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Repository.dll": {}
@@ -13061,6 +13072,11 @@
       "type": "project",
       "path": "../../DTO/DTO/DTO.csproj",
       "msbuildProject": "../../DTO/DTO/DTO.csproj"
+    },
+    "Models/1.0.0": {
+      "type": "project",
+      "path": "../../Client/Singular/Models/Models.csproj",
+      "msbuildProject": "../../Client/Singular/Models/Models.csproj"
     },
     "Repository/1.0.0": {
       "type": "project",

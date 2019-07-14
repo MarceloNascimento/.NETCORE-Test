@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Client\Singular\Models\Models.csproj" />
     <ProjectReference Include="..\..\DTO\DTO\DTO.csproj" />
   </ItemGroup>
 

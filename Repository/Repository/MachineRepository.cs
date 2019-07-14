@@ -8,6 +8,7 @@ namespace Repository
     using System.Text;
     using Dapper;
     using DTO;
+    using Models;
 
     public class MachineRepository : IMachineRepository
     {

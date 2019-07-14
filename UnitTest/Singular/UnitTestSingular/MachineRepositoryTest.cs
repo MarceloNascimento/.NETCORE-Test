@@ -4,12 +4,10 @@ namespace UnitTestSingular
 {
     using DTO;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using Models;
     using Repository;
     using System;
-    using Util;
-    using System;
     using System.Collections.Generic;
-    using System.Text;
 
     [TestClass]
     public class MachineRepositoryTest
