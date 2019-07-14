@@ -7,7 +7,7 @@ namespace Repository
 {
     public interface IMachineRepository
     {
-        int Insert(IList<ClientDTO> clients );
+        int Insert(ClientDTO machine);
         int Update(ClientDTO client);
 
     }
