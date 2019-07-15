@@ -18,3 +18,9 @@ D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\ClientW
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\ClientWinService.exe
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\ClientWinService.pdb
 D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\Util.ProjectInstaller.resources
+D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\Models.dll
+D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\Microsoft.IdentityModel.Protocols.pdb
+D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+D:\Workspace\Singular\Client\ClientWinService\ClientWinService\bin\Debug\Models.pdb
+D:\Workspace\Singular\Client\ClientWinService\ClientWinService\obj\Debug\ClientWinService.exe.config

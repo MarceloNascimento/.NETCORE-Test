@@ -4,41 +4,69 @@
 
 @model DTO.DashboardDTO
 
-    <article class="panel">
-        <section class="row">
-            <h1 class="display-4">Dashboard</h1>
-
-        </section>
+<section class="panel">
 
 
-        <section class="col-md-12">
-            @foreach (var item in Model.Kpis)
-            {
-                <h1 class="bg-success col-md-4 text-center">@item.machines_ok</h1>
-                <h1 class="bg-warning col-md-4 text-center">@item.machines_alert</h1>
-                <h1 class="bg-danger col-md-4 text-center">@item.machines_offline</h1>
-            }
-        </section>
 
-        <section class="col-md-6">
-            <h4 class="h4"> Top 10 Machines</h4>
+    <article class="row text-center">
+        @foreach (var item in Model.Kpis)
+        {
+            <ul class="card-columns" style="display:inline-block;">
+                <li class="card text-white bg-primary mb-4" style="max-width: 18rem;">
+                    <div class="card-header">Machines Ok</div>
+                    <div class="card-body">
+                        <h5 class="card-title">@item.machines_ok</h5>
+                        @*<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>*@
+                    </div>
+                </li>
+
+                <li class="card text-white bg-warning mb-4" style="max-width: 18rem;">
+                    <div class="card-header">Machines in Alert</div>
+                    <div class="card-body">
+                        <h5 class="card-title">@item.machines_alert</h5>
+                        @*<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>*@
+                    </div>
+                </li>
+
+                <li class="card text-white bg-danger mb-4" style="max-width: 18rem;">
+                    <div class="card-header">Machines Offline</div>
+                    <div class="card-body">
+                        <h5 class="card-title">@item.machines_offline</h5>
+                        @*<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>*@
+                    </div>
+                </li>
+            </ul>
+
+        }
+    </article>
+
+    <article class="row">
+
+        <ul class="col-md-6 list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center"><i class="h4 text-danger"> Top 10 Machines </i> without comunication</li>
             @foreach (var machine in Model.Machines)
             {
-                <h1 class="bg-success col-md-4 text-center">@machine.ds_name</h1>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    @machine.ds_name
+                  
+                </li>
+
             }
+        </ul>
 
-        </section>
-
-
-        <section class="col-md-6">
-            <h4 class="h4"> Top 10 Programs</h4>
+        <ul class="col-md-6 list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center bg"><i class="h4 text-warning"> Top 10 Programs</i> less hits</li>
             @foreach (var program in Model.Programs)
             {
-                <h1 class="bg-success col-md-4 text-center">@program.program_name</h1>
-                <h1 class="bg-success col-md-4 text-center">@program.program_counter</h1>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    @program.program_name
+                    <span class="badge badge-primary badge-pill">@program.program_counter</span>
+                </li>
+              
             }
 
-        </section>
-
+        </ul>
     </article>
+
+</section>
 

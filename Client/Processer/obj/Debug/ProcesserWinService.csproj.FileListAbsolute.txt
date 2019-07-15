@@ -16,3 +16,5 @@ D:\Workspace\Singular\Client\Processer\obj\Debug\ProcesserWinService.csproj.Core
 D:\Workspace\Singular\Client\Processer\obj\Debug\ProcesserWinService.csproj.CopyComplete
 D:\Workspace\Singular\Client\Processer\obj\Debug\ProcesserWinService.exe
 D:\Workspace\Singular\Client\Processer\obj\Debug\ProcesserWinService.pdb
+D:\Workspace\Singular\Client\Processer\bin\Debug\Models.dll
+D:\Workspace\Singular\Client\Processer\bin\Debug\Models.pdb

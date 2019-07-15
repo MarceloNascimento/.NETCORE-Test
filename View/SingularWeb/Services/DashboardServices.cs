@@ -21,7 +21,7 @@ namespace SingularWeb.Services
 
         public static DashboardDTO Get()
         {
-            string apiUrl = "http://localhost:1483/api";
+            string apiUrl = "http://localhost:1483/api/dashboard";
             var requisicaoWeb = WebRequest.CreateHttp(apiUrl);
             requisicaoWeb.Method = "GET";
             requisicaoWeb.UserAgent = "WebRequest";
