@@ -289,6 +289,7 @@
       },
       "DTO/1.0.0": {
         "dependencies": {
+          "Models": "1.0.0",
           "RabbitMQ.Client": "6.0.0-pre3"
         },
         "runtime": {

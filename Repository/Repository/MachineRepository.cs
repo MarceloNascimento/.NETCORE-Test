@@ -72,13 +72,15 @@ namespace Repository
 
             using (var connection = new SqlConnection(connectionString))
             {
-                machines = connection.Query<Machine>(@"SELECT  TOP 10
-                 (CASE WHEN (CAST(DATEDIFF(MINUTE,m.dt_datehours,ms.dt_datehours) AS DECIMAL(6, 1)) > 0 )
-                  THEN (CAST(DATEDIFF(MINUTE,m.dt_datehours,ms.dt_datehours) AS DECIMAL(6, 1))) ELSE 0 END) AS TMP,
-                   ms.ds_name
-                    FROM Machines  ms, Machines m 
-                WHERE ms.ds_name = m.ds_name 
-                ORDER BY TMP DESC ) MA").ToList();
+                machines = connection.Query<Machine>(@"SELECT DISTINCT(MA.ds_name),TMP FROM (
+                                SELECT  TOP 10
+                                 (CASE WHEN (CAST(DATEDIFF(MINUTE,m.dt_datehours,ms.dt_datehours) AS DECIMAL(6, 1)) > 0 )
+                                  THEN (CAST(DATEDIFF(MINUTE,m.dt_datehours,ms.dt_datehours) AS DECIMAL(6, 1))) ELSE 0 END) AS TMP,
+                                 ms.ds_name
+                                    FROM Machines  ms, Machines m 
+                                WHERE ms.ds_name = m.ds_name 
+                                ORDER BY TMP DESC ) MA
+                                ").ToList();
 
             }
 
@@ -93,10 +95,11 @@ namespace Repository
             using (var connection = new SqlConnection(connectionString))
             {
                 machines = connection.Query<Programs>(@"SELECT TOP 10 (p.ds_name) program_name,
-                 SUM(CASE WHEN (pr.ds_name = p.ds_name) THEN 1 ELSE 0 END) program_counter 
-                WHERE pr.ds_name = p.ds_name
-                 GROUP BY p.ds_name
-                ORDER BY program_counter DESC").ToList();
+ SUM(CASE WHEN (pr.ds_name = p.ds_name) THEN 1 ELSE 0 END) program_counter -- Time limit
+   FROM Programs pr, Programs p 
+WHERE pr.ds_name = p.ds_name
+ GROUP BY p.ds_name
+ORDER BY program_counter DESC").ToList();
 
             }
 
