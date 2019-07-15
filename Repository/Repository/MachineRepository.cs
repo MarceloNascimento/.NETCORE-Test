@@ -1,14 +1,13 @@
 ﻿
 namespace Repository
 {
+    using Dapper;
+    using DTO;
+    using Models;
     using System;
     using System.Collections.Generic;
     using System.Data.SqlClient;
     using System.Linq;
-    using System.Text;
-    using Dapper;
-    using DTO;
-    using Models;
 
     public class MachineRepository : IMachineRepository
     {
