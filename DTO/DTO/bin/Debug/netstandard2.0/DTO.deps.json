@@ -9,6 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "DTO/1.0.0": {
         "dependencies": {
+          "Models": "1.0.0",
           "NETStandard.Library": "2.0.3",
           "RabbitMQ.Client": "6.0.0-pre3"
         },
@@ -28,6 +29,11 @@
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.0.0"
           }
+        }
+      },
+      "Models/1.0.0": {
+        "runtime": {
+          "Models.dll": {}
         }
       }
     }
@@ -58,6 +64,11 @@
       "sha512": "sha512-8OPb5MlMsTVfa7aLS95+DmLjxsK3PeUPmp1gUQCmy+t6eC5e5dpdb8V+thEQkQIPQ7IwkT44dOMh6NTe8NRq5Q==",
       "path": "rabbitmq.client/6.0.0-pre3",
       "hashPath": "rabbitmq.client.6.0.0-pre3.nupkg.sha512"
+    },
+    "Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

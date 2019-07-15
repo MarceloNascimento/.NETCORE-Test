@@ -111,8 +111,11 @@ namespace Repository
 
             using (var connection = new SqlConnection(connectionString))
             {
-                kpis = connection.Query<KPIs>(@" SELECT *   
-                FROM (SELECT (m.ds_name) machine_name,    
+                kpis = connection.Query<KPIs>(@"   SELECT 
+                SUM(machines_ok) machines_ok,
+                SUM(machines_alert) machines_alert,
+                SUM(machines_offline)   machines_offline   
+                FROM (SELECT     
                     SUM(CASE WHEN ((DATEDIFF(MINUTE,m.dt_datehours,ms.dt_datehours) > 0) AND (DATEDIFF(MINUTE,m.dt_datehours,ms.dt_datehours) = 1 )) THEN 1 ELSE 0 END) machines_ok, -- Time limit
                     SUM(CASE WHEN ((DATEDIFF(MINUTE,m.dt_datehours,ms.dt_datehours) > 1) AND CAST((DATEDIFF(SECOND,m.dt_datehours,ms.dt_datehours))/60  AS DECIMAL(6, 1)) < 1.5)  THEN 1 ELSE 0 END) machines_alert, -- Time limit
                     SUM(CASE WHEN (CAST((DATEDIFF(MINUTE,m.dt_datehours,ms.dt_datehours))/60  AS DECIMAL(6, 1)) > 1.5)  THEN 1 ELSE 0 END) machines_offline        

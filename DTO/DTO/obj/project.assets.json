@@ -34,6 +34,16 @@
         "runtime": {
           "lib/netstandard2.0/RabbitMQ.Client.dll": {}
         }
+      },
+      "Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Models.dll": {}
+        }
       }
     }
   },
@@ -197,10 +207,16 @@
         "rabbitmq.client.6.0.0-pre3.nupkg.sha512",
         "rabbitmq.client.nuspec"
       ]
+    },
+    "Models/1.0.0": {
+      "type": "project",
+      "path": "../../Client/Singular/Models/Models.csproj",
+      "msbuildProject": "../../Client/Singular/Models/Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Models >= 1.0.0",
       "NETStandard.Library >= 2.0.3",
       "RabbitMQ.Client >= 6.0.0-pre3"
     ]
@@ -235,7 +251,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Workspace\\Singular\\Client\\Singular\\Models\\Models.csproj": {
+              "projectPath": "D:\\Workspace\\Singular\\Client\\Singular\\Models\\Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

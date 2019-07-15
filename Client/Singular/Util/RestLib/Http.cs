@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Util.RestLib
 {
-    public class Post
+    public class Http
     {
         public int Id { get; set; }
         public int userId { get; set; }

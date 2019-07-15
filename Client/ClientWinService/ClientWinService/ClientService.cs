@@ -45,7 +45,7 @@ namespace Util
         }
 
 
-        public Post post()
+        public Http post()
         {
             string apiUrl = ConfigurationManager.AppSettings["API"];
 
@@ -69,7 +69,7 @@ namespace Util
                 var streamDados = resposta.GetResponseStream();
                 StreamReader reader = new StreamReader(streamDados);
                 object objResponse = reader.ReadToEnd();
-                var post = JsonConvert.DeserializeObject<Post>(objResponse.ToString());
+                var post = JsonConvert.DeserializeObject<Http>(objResponse.ToString());
 
                 streamDados.Close();
                 resposta.Close();

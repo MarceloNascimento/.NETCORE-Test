@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "ab08c8ac97b3b62ff27f544ca18383373a803b34"
+    "signature": "bcb6870bd803fdca2ebe9f79a71b696b896dec6a"
   },
   "compilationOptions": {
     "defines": [
@@ -24,10 +24,12 @@
     ".NETCoreApp,Version=v2.2": {
       "SingularWeb/1.0.0": {
         "dependencies": {
+          "DTO": "1.0.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.3"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.3",
+          "Util": "1.0.0"
         },
         "runtime": {
           "SingularWeb.dll": {}
@@ -376,6 +378,17 @@
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
         }
       },
+      "RabbitMQ.Client/6.0.0-pre3": {
+        "runtime": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {}
+        }
+      },
       "System.Composition/1.0.31": {
         "dependencies": {
           "System.Composition.AttributedModel": "1.0.31",
@@ -511,6 +524,38 @@
           "System.Runtime.Extensions": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Threading.Tasks": "4.3.0"
+        }
+      },
+      "DTO/1.0.0": {
+        "dependencies": {
+          "Models": "1.0.0",
+          "RabbitMQ.Client": "6.0.0-pre3"
+        },
+        "runtime": {
+          "DTO.dll": {}
+        },
+        "compile": {
+          "DTO.dll": {}
+        }
+      },
+      "Models/1.0.0": {
+        "runtime": {
+          "Models.dll": {}
+        },
+        "compile": {
+          "Models.dll": {}
+        }
+      },
+      "Util/1.0.0": {
+        "dependencies": {
+          "DTO": "1.0.0",
+          "RabbitMQ.Client": "6.0.0-pre3"
+        },
+        "runtime": {
+          "Util.dll": {}
+        },
+        "compile": {
+          "Util.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3660,6 +3705,13 @@
       "path": "nuget.frameworks/4.7.0",
       "hashPath": "nuget.frameworks.4.7.0.nupkg.sha512"
     },
+    "RabbitMQ.Client/6.0.0-pre3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8OPb5MlMsTVfa7aLS95+DmLjxsK3PeUPmp1gUQCmy+t6eC5e5dpdb8V+thEQkQIPQ7IwkT44dOMh6NTe8NRq5Q==",
+      "path": "rabbitmq.client/6.0.0-pre3",
+      "hashPath": "rabbitmq.client.6.0.0-pre3.nupkg.sha512"
+    },
     "System.Composition/1.0.31": {
       "type": "package",
       "serviceable": true,
@@ -3708,6 +3760,21 @@
       "sha512": "sha512-td7x21K8LalpjTWCzW/nQboQIFbq9i0r+PCyBBCdLWWnm4NBcdN18vpz/G9hCpUaCIfRL+ZxJNVTywlNlB1aLQ==",
       "path": "system.linq.parallel/4.3.0",
       "hashPath": "system.linq.parallel.4.3.0.nupkg.sha512"
+    },
+    "DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Util/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",

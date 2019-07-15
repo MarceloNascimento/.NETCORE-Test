@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -6,6 +6,10 @@
 
   <ItemGroup>
     <PackageReference Include="RabbitMQ.Client" Version="6.0.0-pre3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Client\Singular\Models\Models.csproj" />
   </ItemGroup>
 
 </Project>

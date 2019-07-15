@@ -34,11 +34,15 @@ CREATE TABLE Programs (
 --------------------------- DML basics running system ------------------------
 Delete from Machines;
 Delete from Programs;
+
 INSERT Machines (ds_name, dt_datehours)  VALUES ('mac-xpto-172',  CONVERT(datetime, '2019-07-13T22:09:38.544', 126));
 INSERT Machines (ds_name, dt_datehours)  VALUES ('mac-xpto-172',  CONVERT(datetime, '2019-07-13T22:08:38.544', 126));
 
 INSERT Machines (ds_name, dt_datehours)  VALUES ('mac-xpto-173',  CONVERT(datetime, '2019-07-13T22:09:38.544', 126));
 INSERT Machines (ds_name, dt_datehours)  VALUES ('mac-xpto-173',  CONVERT(datetime, '2019-07-13T22:08:38.544', 126));
+
+INSERT Machines (ds_name, dt_datehours)  VALUES ('mac-xpto-172',  CONVERT(datetime, '2019-07-13T22:09:38.544', 126));
+INSERT Machines (ds_name, dt_datehours)  VALUES ('mac-xpto-172',  CONVERT(datetime, '2019-07-13T22:08:38.544', 126));
 
 INSERT Machines (ds_name, dt_datehours)  VALUES ('xyz-22-rbt',  CONVERT(datetime, '2019-07-14T13:57:39.953', 126));
 

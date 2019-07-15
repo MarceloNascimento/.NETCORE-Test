@@ -29,6 +29,16 @@ mais tempo
     FROM Machines m,Machines ms
      WHERE ms.ds_name = m.ds_name
    GROUP BY m.ds_name) AS Machines
+
+
+
+   SELECT *   
+                FROM (SELECT (m.ds_name) machine_name,    
+                    SUM(CASE WHEN ((DATEDIFF(MINUTE,m.dt_datehours,ms.dt_datehours) > 0) AND (DATEDIFF(MINUTE,m.dt_datehours,ms.dt_datehours) = 1 )) THEN 1 ELSE 0 END) machines_ok, -- Time limit
+                    SUM(CASE WHEN ((DATEDIFF(MINUTE,m.dt_datehours,ms.dt_datehours) > 1) AND CAST((DATEDIFF(SECOND,m.dt_datehours,ms.dt_datehours))/60  AS DECIMAL(6, 1)) < 1.5)  THEN 1 ELSE 0 END) machines_alert, -- Time limit
+                    SUM(CASE WHEN (CAST((DATEDIFF(MINUTE,m.dt_datehours,ms.dt_datehours))/60  AS DECIMAL(6, 1)) > 1.5)  THEN 1 ELSE 0 END) machines_offline        
+                FROM Machines m,Machines ms  WHERE ms.ds_name = m.ds_name
+                GROUP BY m.ds_name) AS Machines
  
   ------------------   Query top 10 Machines --------------------
 SELECT DISTINCT(MA.ds_name),TMP FROM (

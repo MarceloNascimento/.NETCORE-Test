@@ -34,10 +34,16 @@
       },
       "DTO/1.0.0": {
         "dependencies": {
+          "Models": "1.0.0",
           "RabbitMQ.Client": "6.0.0-pre3"
         },
         "runtime": {
           "DTO.dll": {}
+        }
+      },
+      "Models/1.0.0": {
+        "runtime": {
+          "Models.dll": {}
         }
       },
       "Newtonsoft.Json/11.0.0.0": {
@@ -78,6 +84,11 @@
       "hashPath": "rabbitmq.client.6.0.0-pre3.nupkg.sha512"
     },
     "DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

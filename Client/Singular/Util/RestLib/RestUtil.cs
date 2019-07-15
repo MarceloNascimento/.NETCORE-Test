@@ -37,14 +37,14 @@ namespace Util.RestLib
 
 
 
-        public Post POST(string url, object postData)
+        public Http POST(string url, object postData)
         {
             try
             {
-                var data = Encoding.ASCII.GetBytes(postData);
+                var data = Encoding.ASCII.GetBytes(JsonConvert.SerializeObject(postData));
 
                 var request = (HttpWebRequest)WebRequest.Create(url);
-                var post = new Post();
+                var post = new Http();
                 request.Method = "POST";
                 request.ContentType = "application/x-www-form-urlencoded";
                 request.ContentLength = data.Length;
@@ -61,7 +61,7 @@ namespace Util.RestLib
                     var streamDados = resposta.GetResponseStream();
                     StreamReader reader = new StreamReader(streamDados);
                     object objResponse = reader.ReadToEnd();
-                    post = JsonConvert.DeserializeObject<Post>(objResponse.ToString());
+                    post = JsonConvert.DeserializeObject<Http>(objResponse.ToString());
                                        
                     streamDados.Close();
                     resposta.Close();

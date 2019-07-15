@@ -2,7 +2,43 @@
     ViewData["Title"] = "Dashboard";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Dashboard</h1>
+@model DTO.DashboardDTO
 
-</div>
+    <article class="panel">
+        <section class="row">
+            <h1 class="display-4">Dashboard</h1>
+
+        </section>
+
+
+        <section class="col-md-12">
+            @foreach (var item in Model.Kpis)
+            {
+                <h1 class="bg-success col-md-4 text-center">@item.machines_ok</h1>
+                <h1 class="bg-warning col-md-4 text-center">@item.machines_alert</h1>
+                <h1 class="bg-danger col-md-4 text-center">@item.machines_offline</h1>
+            }
+        </section>
+
+        <section class="col-md-6">
+            <h4 class="h4"> Top 10 Machines</h4>
+            @foreach (var machine in Model.Machines)
+            {
+                <h1 class="bg-success col-md-4 text-center">@machine.ds_name</h1>
+            }
+
+        </section>
+
+
+        <section class="col-md-6">
+            <h4 class="h4"> Top 10 Programs</h4>
+            @foreach (var program in Model.Programs)
+            {
+                <h1 class="bg-success col-md-4 text-center">@program.program_name</h1>
+                <h1 class="bg-success col-md-4 text-center">@program.program_counter</h1>
+            }
+
+        </section>
+
+    </article>
+

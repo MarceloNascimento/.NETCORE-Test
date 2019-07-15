@@ -30,3 +30,9 @@ D:\Workspace\Singular\View\SingularWeb\obj\Debug\netcoreapp2.2\SingularWeb.cspro
 D:\Workspace\Singular\View\SingularWeb\obj\Debug\netcoreapp2.2\Razor\Views\DASHBOARD\Index.g.cshtml.cs
 D:\Workspace\Singular\View\SingularWeb\obj\Debug\netcoreapp2.2\Razor\Views\REGISTER\Index.g.cshtml.cs
 D:\Workspace\Singular\View\SingularWeb\obj\Debug\netcoreapp2.2\Razor\Views\Home\Logged.g.cshtml.cs
+D:\Workspace\Singular\View\SingularWeb\bin\Debug\netcoreapp2.2\DTO.dll
+D:\Workspace\Singular\View\SingularWeb\bin\Debug\netcoreapp2.2\Models.dll
+D:\Workspace\Singular\View\SingularWeb\bin\Debug\netcoreapp2.2\Util.dll
+D:\Workspace\Singular\View\SingularWeb\bin\Debug\netcoreapp2.2\Util.pdb
+D:\Workspace\Singular\View\SingularWeb\bin\Debug\netcoreapp2.2\DTO.pdb
+D:\Workspace\Singular\View\SingularWeb\bin\Debug\netcoreapp2.2\Models.pdb

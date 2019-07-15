@@ -222,7 +222,11 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Workspace\\Singular\\Client\\Singular\\Models\\Models.csproj": {
+                "projectPath": "D:\\Workspace\\Singular\\Client\\Singular\\Models\\Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
