@@ -39,6 +39,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Models", "03 - Models"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{B77A0885-50AA-44F7-8AD4-23BC1FBBF2D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingularWeb", "..\..\View\SingularWeb\SingularWeb.csproj", "{DEAFCCA5-6EA3-40CA-8634-84A196C8B633}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{B77A0885-50AA-44F7-8AD4-23BC1FBBF2D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B77A0885-50AA-44F7-8AD4-23BC1FBBF2D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B77A0885-50AA-44F7-8AD4-23BC1FBBF2D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEAFCCA5-6EA3-40CA-8634-84A196C8B633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEAFCCA5-6EA3-40CA-8634-84A196C8B633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEAFCCA5-6EA3-40CA-8634-84A196C8B633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEAFCCA5-6EA3-40CA-8634-84A196C8B633}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -94,6 +100,7 @@ Global
 		{94DD212A-0C52-48FC-850F-28574AC28EE2} = {6463C4A3-B944-4EB1-9768-BF3F4839A2B8}
 		{15A7BC2C-F8DE-46BF-8587-05DB2AB66819} = {2D589772-AC15-4610-906E-F2F6C2AC8AF0}
 		{B77A0885-50AA-44F7-8AD4-23BC1FBBF2D0} = {E4175DB7-23BE-4BDA-97B2-0B3B93735CCD}
+		{DEAFCCA5-6EA3-40CA-8634-84A196C8B633} = {38487D5D-E763-40B5-A8A6-7D384B59B3A7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E50E4335-1D78-4571-99FF-67DA576A61A8}

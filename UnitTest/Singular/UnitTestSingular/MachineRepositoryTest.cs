@@ -36,10 +36,29 @@ namespace UnitTestSingular
         }
 
         [TestMethod]
-        public void MachineRepositorySelectTest()
+        public void MachineRepositorySelectTop10MachinesTest()
         {
 
-            IList<Machine> value = this.rep.Select();
+            IList<Machine> value = this.rep.SelectTop10Machines();
+
+            Assert.IsTrue(value.Count > 0);
+        }
+
+
+        [TestMethod]
+        public void MachineRepositorySelectTop10ProgramsTest()
+        {
+
+            IList<Programs> value = this.rep.SelectTop10Programs();
+
+            Assert.IsTrue(value.Count > 0);
+        }
+
+
+        [TestMethod]
+        public void MachineRepositorySelectKPIsTest()
+        {
+            IList<KPIs> value = this.rep.SelectKPIs();
 
             Assert.IsTrue(value.Count > 0);
         }

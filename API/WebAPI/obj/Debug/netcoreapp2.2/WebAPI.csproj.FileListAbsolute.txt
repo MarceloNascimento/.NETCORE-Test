@@ -19,3 +19,5 @@ D:\Workspace\Singular\API\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.csproj.CopyCompl
 D:\Workspace\Singular\API\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.pdb
 D:\Workspace\Singular\API\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.dll
 D:\Workspace\Singular\API\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.pdb
+D:\Workspace\Singular\API\WebAPI\bin\Debug\netcoreapp2.2\Models.dll
+D:\Workspace\Singular\API\WebAPI\bin\Debug\netcoreapp2.2\Models.pdb
