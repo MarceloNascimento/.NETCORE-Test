@@ -1,4 +1,4 @@
-# TesteSingular installation instructions
+# .NETCORE-Test installation instructions
 # @Author Marcelo Rocha
 
 
